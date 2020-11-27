@@ -1,7 +1,7 @@
 import React from 'react'
 
 /* Components */ 
-import Header from '../../components/header'
+import Header from '../components/header'
 
 const HomePage = ()  => {
     return (

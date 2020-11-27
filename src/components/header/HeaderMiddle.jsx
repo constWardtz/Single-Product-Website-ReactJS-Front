@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyledHeaderMiddle, StyledInput, StyledIcons, StyledUserNav }  from '../../assets/styles/Header'
 import { StyledLogo } from '../../assets/styles/navbar/Navbar'
+import { MDBBadge } from 'mdbreact' 
 
 const HeaderMiddle = () => {
     return (
@@ -15,11 +16,14 @@ const HeaderMiddle = () => {
             <StyledIcons>
                 <li>
                     <i className="fa fa-shopping-cart"></i>
+                    <MDBBadge color="purple" className="h-50 p-2 rounded-pill">11</MDBBadge>
                     <i className="fa fa-user"></i>
                 </li>
                 <StyledUserNav>
                     <ul>
-                        <li>Sign in</li><li>|</li><li>Register</li>
+                        <li>Sign&nbsp;in</li>
+                        <li>|</li>
+                        <li>Register</li>
                     </ul>
                 </StyledUserNav>
             </StyledIcons>
@@ -28,3 +32,5 @@ const HeaderMiddle = () => {
 }
 
 export default HeaderMiddle
+
+// https://mdbootstrap.com/docs/react/navigation/hamburger-menu/

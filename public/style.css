@@ -3,13 +3,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
     scroll-behavior: smooth;
     overflow-y: scroll;
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
     color: var(--dark-color);
 }
 
@@ -19,11 +19,8 @@ body{
     --secondary-color: #d191f7;
     --light-color: #e7ddea;
     --dark-color: #2e2e2e;
+    --thin-color: #6e6e6e;
     --hover-color:  #941ab9;
-    /* Font size */
-    --large-font: 6.5rem;
-    --medium-font: 3.5rem;
-    --small-font: 1rem;
     /* Font weight */
     --font-weight-500: 500;
     --font-weight-400: 400;

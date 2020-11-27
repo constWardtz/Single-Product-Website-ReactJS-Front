@@ -1,22 +1,47 @@
-import React from 'react'
+import React, { useState } from "react";
+import {
+MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
+MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
+} from "mdbreact";
 
-/* Components */
-import { StyledLogo, StyledMenu, StyledNavbar } from '../../assets/styles/navbar/Navbar'
+const NavbarPage = () => {
+  const [ isOpen, setIsOpen ] = useState(false)
 
-const Navbar = () => {
-    return (
-        <StyledNavbar>
-            <StyledLogo>
-                <h3>JPG</h3>
-            </StyledLogo>
-            <StyledMenu>
-                <li>Home</li>
-                <li>Products</li>
-                <li>Contact</li>
-                <li>About</li>
-            </StyledMenu>
-        </StyledNavbar>
-    )
-}
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen)
+  }
 
-export default Navbar
+  return (
+      <MDBNavbar light expand="lg">
+        <MDBNavbarToggler onClick={toggleCollapse} />
+        <MDBCollapse isOpen={isOpen} navbar>
+          <MDBNavbarNav left>
+             <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+                  <strong className="mr-2">Category</strong>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu navbar>
+                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
+            <MDBNavItem active>
+              <MDBNavLink to="#!">Fashion</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="#!">Bags</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="#!">Clothings</MDBNavLink>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBNavbar>
+    );
+  }
+
+export default NavbarPage;
