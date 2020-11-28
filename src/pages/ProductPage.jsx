@@ -1,9 +1,10 @@
 import React from 'react'
+import ProductHeading from '../components/heading/ProductHeading'
 
 const ProductPage = () => {
     return (
         <div>
-            ProductPage
+            <ProductHeading />
         </div>
     )
 }
