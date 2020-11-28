@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledHeader } from '../../assets/styles/Header'
+import { StyledHeader } from '../../styles/Header'
 
 /* Components */
 import HeaderBottom from './HeaderBottom'

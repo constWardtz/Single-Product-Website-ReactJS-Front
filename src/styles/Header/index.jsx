@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 /* ASSETS */ 
-import Banner from '../../images/Banner.jpg'
+import Banner from '../../assets/images/Banner.jpg'
 
 /* HEADERS CONTAINER */ 
 export const StyledHeader = styled.div`

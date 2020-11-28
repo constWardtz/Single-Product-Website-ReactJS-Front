@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledHeaderTop, StyledMenu } from '../../assets/styles/Header'
+import { StyledHeaderTop, StyledMenu } from '../../styles/Header'
 
 const HeaderTop = () => {
     return (

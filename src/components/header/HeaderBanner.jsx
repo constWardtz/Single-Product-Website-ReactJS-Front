@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { StyledHeaderBanner } from '../../assets/styles/Header'
+import { StyledHeaderBanner } from '../../styles/Header'
 
 const HeaderBanner = () => {
     return (

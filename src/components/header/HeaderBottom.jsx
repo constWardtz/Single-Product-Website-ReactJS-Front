@@ -1,7 +1,7 @@
 import React from 'react'
 
 /* Styled */ 
-import { StyledHeaderBottom, NavBtn } from '../../assets/styles/Header'
+import { StyledHeaderBottom, NavBtn } from '../../styles/Header'
 /* Components */ 
 
 const HeaderBottom = () => {

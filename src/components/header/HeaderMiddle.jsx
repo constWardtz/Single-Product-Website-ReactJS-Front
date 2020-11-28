@@ -1,6 +1,6 @@
 import React from 'react'
-import { StyledHeaderMiddle, StyledInput, StyledIcons, StyledUserNav }  from '../../assets/styles/Header'
-import { StyledLogo } from '../../assets/styles/navbar/Navbar'
+import { StyledHeaderMiddle, StyledInput, StyledIcons, StyledUserNav }  from '../../styles/Header'
+import { StyledLogo } from '../../styles/navbar/Navbar'
 import { MDBBadge } from 'mdbreact' 
 
 const HeaderMiddle = () => {

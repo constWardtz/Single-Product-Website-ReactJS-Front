@@ -1,7 +1,7 @@
 import React from 'react'
 
 /* Style */ 
-import {StyledHeaderService} from '../../assets/styles/Header/'
+import {StyledHeaderService} from '../../styles/Header/'
 
 const HeaderService = () => {
     return (
